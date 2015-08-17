@@ -1,0 +1,16 @@
+{
+  "name": "news-classifier",
+  "version": "1.0.0",
+  "description": "terminal app to classify news headlines",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Koustuv Sinha",
+  "license": "MIT",
+  "dependencies": {
+    "natural": "^0.2.1",
+    "prompt": "^0.2.14",
+    "request": "^2.60.0"
+  }
+}

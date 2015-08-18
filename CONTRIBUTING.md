@@ -5,6 +5,7 @@ This document presents a new user tutorial to contribute and proper workflow.
 To develop, follow the workflow :
 
 **First Time**
+
 1. Fork this repository
 2. Configure your github user / email (skip this if already done) :
 `git config --global user.name "Your Name"`,

@@ -1,5 +1,5 @@
 # newsclassifier-node
-Node command line app to classify news based on headlines
+Node command line app to classify news based on headlines [WIP]
 
 ## Introduction
 
@@ -58,3 +58,5 @@ Head over to [Contributing](CONTRIBUTING.md) page for more info about how to fil
 *"DataMaestro"*, Data Mining / Machine Learning Research Group of [Institute of Engineering & Management, Kolkata](http://iem.edu.in) under the guidance of **Prof. Saptarsi Goswami**
 
 [MIT](LICENSE) License
+
+[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)

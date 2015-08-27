@@ -4,13 +4,21 @@
   "description": "terminal app to classify news headlines",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "standard && mocha test/test.js"
   },
   "author": "Koustuv Sinha",
   "license": "MIT",
   "dependencies": {
+    "inquirer": "^0.9.0",
     "natural": "^0.2.1",
     "prompt": "^0.2.14",
-    "request": "^2.60.0"
+    "request": "^2.60.0",
+    "stopwords": "0.0.5"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5",
+    "standard": "^5.1.0",
+    "should": "^7.0.4"
   }
 }

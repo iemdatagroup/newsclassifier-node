@@ -1,4 +1,4 @@
-# Contributing
+# Contributing [WIP]
 
 This document presents a new user tutorial to contribute and proper workflow.
 

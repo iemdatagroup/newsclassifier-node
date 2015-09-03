@@ -3,7 +3,7 @@ Node command line app to classify news based on headlines [WIP]
 
 ## Introduction
 
-This is a POC on Bayes Classification of News articles. We use a node module [Natural Node](https://github.com/NaturalNode/natural) to perform classification on news articles based on their headlines. Our primary goal is to scrape the news sources of Kolkata, India using [KimonoLab Scraper API](https://www.kimonolabs.com), and then classify them into two distinct categories : *Crime* and *Non Crime*. Finally, after classification we will extract the data from the crime articles, regarding the type of crime, place of occurrence etc and build our own database, upon which we can further perform learning tasks.
+This is a POC on Bayes Classification of News articles. We use a node module [Natural Node](https://github.com/NaturalNode/natural) to perform classification on news articles based on their headlines. Our primary goal is to scrape the news sources of Kolkata, India using [KimonoLab Scraper API](https://www.kimonolabs.com) and gather news tweets, and then classify them into two distinct categories : *Crime* and *Non Crime*. Finally, after classification we will extract the data from the crime articles, regarding the type of crime, place of occurrence etc and build our own database, upon which we can further perform learning tasks.
 
 ## How to use
 
@@ -19,23 +19,23 @@ Then, cd into **newsclassifier-node** and run :
 
 This will install the necessary dependencies. Next, proceed with training or classifying :
 
-`npm start`
+Training :
+
+`node index.js --t <file_name.json | file_name.csv>`
+
+Classifying :
+
+`node index.js --c <file_name.json | file_name.csv>`
 
 ## Inputs
 
-Currently, the api's only support [KimonoLab's API](https://www.kimonolabs.com). When prompted, you should enter a valid api such as :
-
-`https://www.kimonolabs.com/api/<api_id>?apikey=<api_key>`
-
-You should also run the scraper before hand having the following properties in the scraper api :
-* `headlines`
-* `url`
+The program accepts only file inputs of type **JSON** and **csv**. JSON files should be the output of KimonoLab scraper, and CSV files should be the output of Twitter scraper
 
 ## Training
 
-Since this is a POC, train a subset of scraper data with choices as *crime* and *nocrime*, and then evaluate the performance in classifier. Also, if the classifier outputs wrong class, then provide necessary feedback in the program.
+Since this is a POC, train a subset of scraper data / twitter data with choices as *crime* and *nocrime*, and then evaluate the performance in classifier.
 
-The trained classifiers are saved in */data* folder. When prompted to save / load file, **only** provide the file name, not the path or extension.
+The trained classifier is saved in */data* folder at `data/knowledge.json`
 
 ## Dependencies
 
